@@ -10,7 +10,7 @@ FROM alpine:3.17.2
 
 WORKDIR /app
 
-RUN apk add --update nodejs npm
+RUN apk add --update nodejs npm curl
 
 COPY --from=base /app/node_modules .
 
